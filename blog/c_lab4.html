@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Web Developer == Front-end || Back-end || Toronto</title>
+    <!-- Custom fonts for this theme -->
+    <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Theme CSS -->
+    <link href="/css/freelancer.min.css" rel="stylesheet">
+    <style>
+    </style>
+</head>
+
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Ping Zhang</a>
+            <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/index.html#portfolio">Portfolio</a>
+                    </li>
+                     <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/blog/index.html">Blog</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/index.html#about">About</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead -->
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Page Heading -->
+        <h4 class="my-4" style="padding-top:6rem;">Code snippets For Course ETY155NEF and PRG155NGH </h4>
+        <div class="alert alert-primary" role="alert">
+            ETY155NEF: Basic concepts of D.C. electricity</div>
+        <div class="alert alert-primary" role="alert">
+            PRG155NGH: Programming Fundamentals Using "C"
+        </div>
+        <!-- Project One -->
+        <div class="row">
+            <div class="col-md-12 max-auto">
+                <h3>PRG155NGH Lab 4</h3>
+                <p>
+                    <pre class="prettyprint">
+/*
+	Course: PRG155NGH: Programming Fundamentals Using "C"
+	Program: Lab4.c
+	Author: Ping Zhang
+	Date: 09/25/2019
+	Purpose: Using variables, expressions, math functions
+*/
+
+
+/* Source code for Lab4_a.c */
+
+#include &lt;stdio.h&gt;
+
+int main()
+{
+	/* Code block A */
+
+	int totalMin, hours, minutes;
+
+	printf("Enter the total minutes: ");
+	scanf("%d",&totalMin);
+
+	hours = totalMin / 60;
+	minutes = totalMin % 60;
+
+	printf("\n%d minutes = %d hours & %d minutes\n", totalMin, hours, minutes);
+
+	/* Code block B */
+
+	int numberA, numberB, numberC, sum;
+	float average;
+
+	printf("Enter three numbers as following\n");
+
+	printf("First Number: ");
+	scanf("%d", &numberA);
+
+	printf("\nSecond Number: ");
+	scanf("%d", &numberB);
+
+	printf("\nThird Number: ");
+	scanf("%d", &numberC);
+
+	sum = numberA + numberB + numberC;
+
+	average = sum / 3.0;
+
+
+	printf("\nYou entered the numbers: %d, %d, %d\n",numberA, numberB, numberC);
+	printf("The sum of three numbers is %d", sum);
+	printf("\nThe average of three numbers is %.4f\n", average);
+
+
+	getchar();
+	return 0;
+}	
+
+
+/* Source code for Lab4_b.c */
+
+#include &lt;stdio.h&gt;
+#include &lt;math.h&gt;
+
+int main()
+{
+	float canOne_diameter, canOne_height;
+	float canTwo_diameter, canTwo_height;
+	float numberOfTripsOne, numberOfTripsTwo;
+
+	const int TUBE_SIZE = 1000;
+	const float PI = 3.1416;
+
+	printf("Enter the diameter and height for Can One\n");
+	printf("\nDiameter: ");
+	scanf("%f", &canOne_diameter);
+	printf("\nHeight: ");
+	scanf("%f", &canOne_height);
+
+	numberOfTripsOne = (TUBE_SIZE * 4 )/ (PI * pow(canOne_diameter, 2.0) * canOne_height);
+	printf("Can one takes %d trips to fill the tub.", ceil(numberOfTripsOne));
+
+	printf("\nEnter the diameter and height for Can Two");
+	printf("\nDiameter: ");
+	scanf("%f", &canTwo_diameter);
+	printf("\nHeight: ");
+	scanf("%f", &canTwo_height);
+	
+	numberOfTripsTwo = (TUBE_SIZE * 4 )/ (PI * pow(canTwo_diameter, 2.0) * canTwo_height);
+	printf("\nCan two takes %d trips to fill the tub.", ceil(numberOfTripsOne));
+
+	if(numberOfTripsOne > numberOfTripsTwo)
+	{
+		printf("\nCan one takes the least amount of trips.");
+	}else
+	{
+		printf("\nCan two takes the least amount of trips.");
+	}
+
+	return 0;
+}	
+</pre>
+                </p>
+                
+            </div>
+        </div>
+        <!-- /.row -->
+      
+       
+    </div>
+    <!-- /.container -->
+    <!-- Copyright Section -->
+    <section class="copyright py-4 text-center text-white">
+        <div class="container">
+            <small>Handcrafted by me based on Bootstrap theme [ Copyright &copy; Ping Zhang, 2019 ] </small>
+        </div>
+    </section>
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="/js/jqBootstrapValidation.js"></script>
+    <script src="/js/contact_me.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="/js/freelancer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert"></script>
+</body>
+
+</html>
